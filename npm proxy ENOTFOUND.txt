@@ -1,0 +1,64 @@
+npm proxy ENOTFOUND
+(^_^) :npm install
+npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: puppeteer@^1.12.1 (node_modules/puppeteer):
+npm WARN network SKIPPING OPTIONAL DEPENDENCY: request to https://registry.npmjs.org/puppeteer failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+
+npm ERR! code ENOTFOUND
+npm ERR! errno ENOTFOUND
+npm ERR! network request to https://registry.npmjs.org/@antv%2fdata-set failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network 
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac/.npm/_logs/2019-04-19T03_21_42_656Z-debug.log
+(^_^) :rm ./package-lock.json
+rm: ./package-lock.json: No such file or directory
+(^_^) :rm package-lock.json
+rm: package-lock.json: No such file or directory
+(^_^) :npm cache verify
+Cache verified and compressed (~/.npm/_cacache):
+Content verified: 2973 (66016974 bytes)
+Content garbage-collected: 10 (1332329 bytes)
+Index entries: 4763
+Finished in 20.197s
+(^_^) :npm install
+npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: puppeteer@^1.12.1 (node_modules/puppeteer):
+npm WARN network SKIPPING OPTIONAL DEPENDENCY: request to https://registry.npmjs.org/puppeteer failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+
+npm ERR! code ENOTFOUND
+npm ERR! errno ENOTFOUND
+npm ERR! network request to https://registry.npmjs.org/@antv%2fdata-set failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network 
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac/.npm/_logs/2019-04-19T03_24_26_458Z-debug.log
+(^_^) :npm config set registry http://registry.npmjs.org/
+(^_^) :npm install
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: puppeteer@^1.12.1 (node_modules/puppeteer):
+npm WARN network SKIPPING OPTIONAL DEPENDENCY: request to http://registry.npmjs.org/puppeteer failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+
+npm ERR! code ENOTFOUND
+npm ERR! errno ENOTFOUND
+npm ERR! network request to http://registry.npmjs.org/@antv%2fdata-set failed, reason: getaddrinfo ENOTFOUND proxy.company.com proxy.company.com:8080
+npm ERR! network This is a problem related to network connectivity.
+npm ERR! network In most cases you are behind a proxy or have bad network settings.
+npm ERR! network 
+npm ERR! network If you are behind a proxy, please make sure that the
+npm ERR! network 'proxy' config is set properly.  See: 'npm help config'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac/.npm/_logs/2019-04-19T03_25_55_711Z-debug.log
+(^_^) :npm config rm proxy
+(^_^) :npm config rm https-proxy
+(^_^) :npm install
